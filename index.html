@@ -5,38 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contenu Privé</title>
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
     .container {
       max-width: 500px;
       margin: 50px auto;
       text-align: center;
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     .blurred {
       filter: blur(12px);
       transition: filter 0.5s;
-    }
-    .clear {
-      filter: none;
+      border-radius: 10px;
     }
     button {
       margin-top: 15px;
       padding: 10px 20px;
       font-size: 16px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h2>Contenu réservé 🔒</h2>
-    <img id="privateImage" src="https://via.placeholder.com/400x300" width="100%" class="blurred" />
-    <br/>
+    
+    <!-- Remplace ce lien par l'URL de ton image -->
+    <img src="https://via.placeholder.com/400x300" class="blurred" width="100%" />
+
+    <br/><br/>
+
+    <!-- Remplace ce lien par ton lien de paiement CinetPay -->
     <button onclick="unlock()">Débloquer (1000 FCFA)</button>
   </div>
 
   <script>
     function unlock() {
-      // Remplace ce lien par ton vrai lien de paiement CinetPay
-      window.location.href = "https://checkout.cinetpay.com/YOUR-LINK-HERE";
+      // 🔁 Mets ici ton vrai lien CinetPay
+      window.location.href = "https://checkout.cinetpay.com/YOUR-CINETPAY-LINK";
     }
   </script>
 </body>
 </html>
+
