@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contenu Privé</title>
+  <style>
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      text-align: center;
+    }
+    .blurred {
+      filter: blur(12px);
+      transition: filter 0.5s;
+    }
+    .clear {
+      filter: none;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Contenu réservé 🔒</h2>
+    <img id="privateImage" src="https://via.placeholder.com/400x300" width="100%" class="blurred" />
+    <br/>
+    <button onclick="unlock()">Débloquer (1000 FCFA)</button>
+  </div>
+
+  <script>
+    function unlock() {
+      // Remplace ce lien par ton vrai lien de paiement CinetPay
+      window.location.href = "https://checkout.cinetpay.com/YOUR-LINK-HERE";
+    }
+  </script>
+</body>
+</html>
